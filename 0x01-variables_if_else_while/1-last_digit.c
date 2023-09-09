@@ -17,19 +17,21 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	Last_d = n % 10;
 
+	printf("Last digit of %d is %d", n, Last_d);
+
 	if (Last_d > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, Last_d);
+		printf(" and is greater than 5\n");
 	}
 
 	else if (Last_d == 0)
 	{
-		printf("Last digit of %d is %d and is zero\n", n, Last_d);
+		printf("and is zero\n");
 	}
 
 	else
 	{
-		printf("Last digit of %d is %d and is less and not 0\n", n, Last_d);
+		printf("and is less than 6 and not 0\n");
 	}
 	return (0);
 }
