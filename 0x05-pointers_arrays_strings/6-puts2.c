@@ -8,23 +8,23 @@
 
 void puts2(char *str)
 {
-        int m = 0;
-        int n = 0;
-        char *z = str;
-        int num;
+	int m = 0;
+	int n = 0;
+	char *z = str;
+	int num;
 
-        while (*z != '\0')
-        {
-                z++;
-                m++;
-        }
-        n = m - 1;
+	while (*z != '\0')
+	{
+		z++;
+		m++;
+	}
+	n = m - 1;
 
-        for (num = 0; num <= n; num++)
-        {
-                if (num % 2 == 0)
-                        _putchar(str[num]);
+	for (num = 0; num <= n; num++)
+	{
+		if (num % 2 == 0)
+			_putchar(str[num]);
 
-        }
-        _putchar('\n');
+	}
+	_putchar('\n');
 }
