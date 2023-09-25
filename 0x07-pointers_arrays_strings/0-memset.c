@@ -11,7 +11,8 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	char *stored = s;
+	char *stored = s; /*store the original pointer before modifying it*/
+			  /* to ensure that the return value is the original pointer*/
 
 		while (n > 0)
 		{
