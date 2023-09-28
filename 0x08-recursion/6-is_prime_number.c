@@ -41,6 +41,8 @@ int _isPrime(int num1, int num2)
 		return (1);
 	}
 
+	/*to check if num1 is divisible by num2.*/
+	/*num1 % num2 = 0, then num1 is not prime*/
 	else if (num1 % num2 == 0)
 	{
 		return (0);
