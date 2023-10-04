@@ -18,12 +18,12 @@ char *_strdup(char *str)
 	if (str == 0)
 		return (NULL);
 
-	if (str[m] != '\0')
+	while (str[m] != '\0')
 	{
 		m++;
 	}
 
-	c = (char *)malloc(sizeof(m + 1) * n);
+	c = (char *)malloc(sizeof(char) * (m + 1));
 
 	if (c == 0)
 	{
@@ -31,7 +31,7 @@ char *_strdup(char *str)
 	}
 
 	/*copy str to c*/
-	for (n = 0; str[n] != '\0'; n++)
+	for (n = 0; n <= m; n++)
 		c[n] = str[n];
 	return (c);
 }
