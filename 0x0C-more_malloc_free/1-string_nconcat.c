@@ -46,7 +46,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		m++;
 	}
 
-	while (n < s2_len && m < (s1_len + n)) /*Ensure tht y won't go beyond length of s2 or n*/
+	while (n < s2_len && m < (s1_len + n))
 	{
 		str[m] = s2[y];
 		m++;
@@ -54,11 +54,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	while (n >= s2_len && m < (s1_len + s2_len))
-		{
-			str[m] = s2[y];
-			m++;
-			y++;
-		}
+	{
+		str[m] = s2[y];
+		m++;
+		y++;
+	}
 
 	str[m] = '\0';
 
