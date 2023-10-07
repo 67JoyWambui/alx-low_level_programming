@@ -9,17 +9,17 @@
  * Return: 0 on success
  */
 
-int main( int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int n, m;
-	long unsigned int mul;
+	unsigned long int mul;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	
+
 	for (n = 1; n < 2; n++)
 	{
 		for (m = 0; argv[n][m] != '\0'; m++)
