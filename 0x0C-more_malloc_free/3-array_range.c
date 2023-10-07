@@ -7,7 +7,7 @@
  * @min: min value.
  * @max: max value
  *
- * Return: pointer to the new create array and 
+ * Return: pointer to the new create array and
  *	if man > mix, returns NULL.
  */
 
@@ -26,12 +26,11 @@ int *array_range(int min, int max)
 		return (NULL);
 
 	i = 0;
-	
-	do 
-	{
+
+	do {
 		range[i] = min++;
 	}
-	
+
 	while (min <= max && ++i);
 
 		return (range);
