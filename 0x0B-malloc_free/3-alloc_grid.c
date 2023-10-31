@@ -20,7 +20,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	meep = (int **)malloc(sizeof(int *) * height);
+	meep = malloc(sizeof(int *) * height);
 
 	/*allocating 4 rows*/
 	if (meep == NULL)
@@ -29,7 +29,7 @@ int **alloc_grid(int width, int height)
 
 	for (r = 0; r < height; r++)
 	{
-		meep[r] = (int *)malloc(sizeof(int *) * width);
+		meep[r] = malloc(sizeof(int) * width);
 
 			if (meep[r] == NULL)
 			{
