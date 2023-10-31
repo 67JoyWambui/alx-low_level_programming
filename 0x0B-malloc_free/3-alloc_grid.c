@@ -20,7 +20,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	meep = (int **)malloc(sizeof(int **) * height);
+	meep = (int **)malloc(sizeof(int *) * height);
 
 	/*allocating 4 rows*/
 	if (meep == NULL)
