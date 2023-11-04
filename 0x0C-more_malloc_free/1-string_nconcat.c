@@ -7,13 +7,14 @@
  * @s2: the second string
  * @n: the number of bytes
  *
- * Return: a pointer
+ * Return: a pointer, otherwise NULL
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *dest;
-	unsigned int m = 0, num;
+	unsigned int m = 0;
+	unsigned int num = 0;
 
 /*cases where  NULL is passed, and is therefore treated as an empty string*/
 	if (s1 == NULL)
@@ -34,6 +35,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 
 	m = 0;
+	num = 0;
 
 	for (num = 0; s1[num]; num++)
 		dest[m++] = s1[num];
