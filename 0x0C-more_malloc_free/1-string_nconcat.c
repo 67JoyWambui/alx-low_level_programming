@@ -26,12 +26,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	}
 
-	num = 0;
 	while (s1[num])
 	{
 		num++;
 		m++;
 	}
+
+	for (; num < n && s2[num]; num++)
+		m++;
 
 	dest = (char *)malloc(sizeof(char) * (m + 1)); /*+1 for the null terminator*/
 
