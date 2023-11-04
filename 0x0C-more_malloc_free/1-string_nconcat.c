@@ -13,7 +13,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *dest;
-	unsigned int m, num;
+	unsigned int m = 0, num;
 
 /*cases where  NULL is passed, and is therefore treated as an empty string*/
 	if (s1 == NULL)
@@ -42,6 +42,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		dest[m++] = s2[num];
 
 	dest[m] = '\0';
-	
+
 	return (dest);
 }
