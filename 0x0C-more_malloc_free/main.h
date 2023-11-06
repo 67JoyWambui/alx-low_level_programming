@@ -11,5 +11,6 @@ int *array_range(int min, int max);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int main();
 void *_memcopy(void *str1, void *str2, unsigned int n);
+int _isInteger(int argc, char *argv[]);
 
 #endif /* MAIN_H */
