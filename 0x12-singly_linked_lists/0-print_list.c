@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * size_t print_list - a function that prints all the elements 
+ * print_list - a function that prints all the elements
  *	of a list_t list
  * @h: head of the list
  *
@@ -19,10 +19,10 @@ size_t print_list(const list_t *h)
 		{
 			printf("(nil)");
 		}
-		
+
 		else
 		{
-			printf ("[%d] %s\n", pointer->len, pointer->str);
+			printf("[%d] %s\n", pointer->len, pointer->str);
 			num++;
 		}
 
